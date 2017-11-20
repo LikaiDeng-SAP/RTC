@@ -1,0 +1,30 @@
+[
+  {
+    "Class": "One",
+    "CurrentGrade": "97",
+    "Id": "1",
+    "Name": "Erlich Barchman",
+    "Teacher": "Gavin Belson"
+  },
+  {
+    "Class": "Two",
+    "CurrentGrade": "2",
+    "Id": "2",
+    "Name": "Richard Handricks",
+    "Teacher": "Peter Gregory"
+  },
+  {
+    "Class": "2",
+    "CurrentGrade": "3",
+    "Id": "3",
+    "Name": "Jared",
+    "Teacher": "0"
+  },
+  {
+    "Class": "3",
+    "CurrentGrade": "4",
+    "Id": "4",
+    "Name": "Dinesh",
+    "Teacher": "1"
+  }
+]

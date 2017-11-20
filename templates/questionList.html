@@ -1,0 +1,11 @@
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="page-header" align="center">
+<h1>Realtime Class System</h1>
+</div>
+<h1 align="center">Homework:</h1>
+<ul class="list-group" ng-repeat="x in questionId" style="margin-left: 400px;width: 400px">
+  <li class="list-group-item" ng-click="goToOneQuestion(x.questionid)">{{x.title}}</li>
+</ul>

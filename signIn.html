@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="page-header" align="center">
+<h1>Realtime Class System</h1>
+</div>
+<div style="padding: 10px 10px 10px;margin-left: 400px;">
+<form name="signUpForm">
+	<div class="form-horizontal" role="form">
+		<label>User Name:</label>
+		<input type="text" name="userName" id= "userNameInputId" class="form-control" style="width:120px;height: 30px;margin-bottom: 20px;">
+		<br>
+		<label>Password:  </label>
+		<input type="password" class="form-control" name="userPassword_1" style="width:129px;height: 30px;margin-bottom: 20px">
+		<br>
+		<button type="button" class="btn btn-default btn-lg" ng-click="goToStudentHome()">
+ 		<span class="glyphicon" aria-hidden="true"></span> Sign In
+		</button>
+<!-- 		<button type="button" class="btn btn-default btn-lg" ng-click="goToTeacherHome()">
+ 		<span class="glyphicon" aria-hidden="true"></span> Sign In As TEACHER
+		</button> -->
+		<button type="button" class="btn btn-default btn-lg" ng-click="goToSignUp()">
+ 		<span class="glyphicon" aria-hidden="true"></span> Register
+		</button>
+	</div>
+</form>
+</div>
+</body>
+</html>

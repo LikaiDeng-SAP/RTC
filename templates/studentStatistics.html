@@ -1,0 +1,40 @@
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Grade'],
+          ['4-16',  78],
+          ['4-18',  68],
+          ['4-20',  70],
+          ['4-22',  60],
+          ['4-26',  85],
+          ['4-28',  88],
+          ['4-30',  92],
+          ['5-10',  90]
+        ]);
+        var options = {
+          title: 'Student Statistics',
+          hAxis: {title: 'Date',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <div class="page-header" align="center">
+    <h1>Realtime Class System</h1>
+    </div> 
+  <div style="margin-left: 400px !important;">
+  <img src="./mock/googletouxiang.jpg"  alt="Image Unknow" style="width: 50px;margin-left: 30px;margin-top: 20px;margin-bottom: 10px;"/>
+
+  <p>Student Statistics : </p>
+  <div ng-repeat="x in studentStatistics">
+  <li class="list-group-item" style="width:250px">{{x.Date}}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{{x.Grade}}</li>
+  </div> 
+  </div>
+  <div id="chart_div" style="width: 100%; height: 500px;"></div>

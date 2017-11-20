@@ -1,0 +1,44 @@
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="page-header" align="center">
+<h1>Realtime Class System</h1>
+</div>
+<h1 align="center">Homework:</h1>
+<div style=""><label for="searchInput">Search Questions:</label>
+	<input type="text" class="form-control" name="searchInput" style="height: 30px;width: 100px">
+<div class="btn-group" align="center" style="margin-bottom: 10px">
+	<button type="button" class="btn btn-default dropdown-toggle btn-lg" 
+			data-toggle="dropdown">Filter<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>Multiple choice</li>
+		<li>Fill in blank</li>
+		<li>Answer</li>
+	</ul>
+</div>
+	</div>
+
+
+
+<ul class="list-group" ng-repeat="x in assignHomework" style="margin-left: 0px;margin-bottom: 0px;width: auto;">
+  <input type="checkbox" style="height: 50px;width: 50px;float: left;"> 
+  <li class="list-group-item" style="height: 60px;width: auto;margin-left: 50px" ng-click="goToOneQuestion(x.questionid)">{{x.title}}</li>
+</ul>
+<div align="center" style="margin-top: 10px">
+<div class="btn-group" align="center" style="margin-bottom: 10px">
+	<button type="button" class="btn btn-default dropdown-toggle btn-lg" 
+			data-toggle="dropdown">Pick Class<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</div><br>
+	<button type="button" class="btn btn-default" style="height: 40px">Confirm</button>
+</div>
+<br><br><br><br><br><br><br><br><br><br>

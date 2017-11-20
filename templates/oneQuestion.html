@@ -1,0 +1,33 @@
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mathSymbol.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="page-header" align="center">
+<h1>Realtime Class System</h1>
+</div>
+<ul class="list-group" style="width: 300px !important;margin-top: 20px;margin-left: 400px;">
+  <li class="list-group-item" ng-model="question" ng-if="question.type=='1'">单选题</li>
+   <li class="list-group-item" ng-model="question" ng-if="question.type=='0'">解答题</li>
+  <li class="list-group-item" ng-model="question" ng-if="true">{{question.title}}</li>
+</ul>
+<div class="btn-group" role="group" aria-label="..." ng-if="question.type=='1'" style="margin-left: 400px;width: 300px !important">
+  <button type="button" class="btn btn-default" ng-click="submitChoiceA()">A</button>
+  <button type="button" class="btn btn-default" ng-click="submitChoiceB()">B</button>
+  <button type="button" class="btn btn-default" ng-click="submitChoiceC()">C</button>
+  <button type="button" class="btn btn-default" ng-click="submitChoiceD()">D</button>
+</div>
+<div ng-if="question.type=='0'">
+<!-- <frac ng-show="show1"></frac>
+<sqrt ng-show="show2"></sqrt>
+<square ng-show="show3"></square>
+  <button type="button" class="btn btn-default" ng-click="showFraction()">Fraction</button>
+  <button type="button" class="btn btn-default" ng-click="showSqrt()">Sqrt</button>
+  <button type="button" class="btn btn-default" ng-click="showSquare()">Square</button>
+  <br>
+  <button type="button" class="btn btn-default" ng-click="submitAnswer()">Submit</button> -->
+<textarea id="editor" cols="20" rows="2" class="ckeditor"></textarea>
+<button type="button" class="btn btn-default" ng-click="submitCKEditor()">Submit</button>
+<script>
+   CKEDITOR.replace( 'editor' );
+</script>
+</div>

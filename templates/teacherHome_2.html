@@ -1,0 +1,23 @@
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <div class="page-header" align="center">
+<h1>Realtime Class System</h1>
+</div> 
+  <div style="margin-left: 400px;">
+  <img src="./mock/googletouxiang.jpg"  alt="Image Unknow" style="width: 50px;margin-top: 20px;margin-bottom: 10px;" />
+  <ul class="list-group" style="width: 300px;margin-left: 0px;">
+  <li class="list-group-item">Name :  {{studentList.data[1].Teacher}}</li>
+  <li class="list-group-item">Class :  {{studentList.data[1].Class}}</li>
+  </ul>
+  <div>
+  <label for="uploadInput">Upload Questions:</label>
+  <input id = "fileupload" name="uploadInput" type = "file"/>
+  <br>
+  <button type="button" class="btn btn-default btn-lg" ng-click="assignHomework()">Assign Homework</button>
+  </div>
+  <a>STUDENTS <span class="badge">4</span></a>
+  <br><br>
+  <li class="list-group-item" ng-repeat="x in studentList.data" style="width: 300px">-{{x.Name}}</li>
+  </div>
+
